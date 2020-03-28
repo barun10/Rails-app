@@ -6,5 +6,7 @@ Rails.application.routes.draw do
     collection { post :import }
   end
 
-  # root 'users#index'
+  resources :employees do 
+    collection { post :import }
+  end
 end
