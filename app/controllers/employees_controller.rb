@@ -71,3 +71,5 @@ class EmployeesController < ApplicationController
       params.require(:employee).permit(:name, :email, :phone_number)
     end
 end
+
+
