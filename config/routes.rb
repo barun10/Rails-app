@@ -12,4 +12,6 @@ Rails.application.routes.draw do
 
   resources :students
   get '/send_mail' => 'students#send_mail'
+
+  resources :images
 end
