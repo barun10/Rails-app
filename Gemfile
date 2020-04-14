@@ -35,6 +35,8 @@ gem 'sassc-rails', '>= 2.1.0'
 gem 'bootstrap', '~> 4.4', '>= 4.4.1'
 gem 'carrierwave', '~> 2.1'
 gem 'autoprefixer-rails'
+gem 'simple_form'
+
 # Use ActiveStorage variant
 gem 'mini_magick', '~> 4.8'
 

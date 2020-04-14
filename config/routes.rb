@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'officers/index'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html   
   root 'home#index'
 
@@ -14,4 +15,7 @@ Rails.application.routes.draw do
   get '/send_mail' => 'students#send_mail'
 
   resources :images
+
+  resources :officers
+
 end
