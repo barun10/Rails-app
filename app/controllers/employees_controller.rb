@@ -50,8 +50,7 @@ class EmployeesController < ApplicationController
     end
   end
 
-  # DELETE /employees/1
-  # DELETE /employees/1.json
+
   def destroy
     @employee.destroy
     respond_to do |format|
@@ -61,12 +60,10 @@ class EmployeesController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
     def set_employee
       @employee = Employee.find(params[:id])
     end
 
-    # Only allow a list of trusted parameters through.
     def employee_params
       params.require(:employee).permit(:name, :email, :phone_number)
     end
