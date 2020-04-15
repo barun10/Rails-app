@@ -13,5 +13,5 @@ Rails.application.routes.draw do
   resources :students
   get '/send_mail' => 'students#send_mail'
 
-  resources :images
+  resources :images, except: [:edit, :update, :destroy]
 end

@@ -12,9 +12,6 @@ class ImagesController < ApplicationController
       @image = Image.new
     end
 
-    def edit
-    end
-  
     def create
       @image = Image.new(image_params)
   
