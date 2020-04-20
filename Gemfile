@@ -24,21 +24,18 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'prawn', '~> 2.1'
 gem 'prawn-table', '~> 0.2.2'
-gem 'letter_opener', '~> 1.4', '>= 1.4.1'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 gem 'bootstrap-sass', '~> 3.4.1'
-gem 'sassc-rails', '>= 2.1.0'
-gem 'bootstrap', '~> 4.4', '>= 4.4.1'
-gem 'carrierwave', '~> 2.1'
-gem 'autoprefixer-rails'
+gem 'bootstrap', '~> 4.4'
+
 gem 'simple_form'
 
 # Use ActiveStorage variant
-gem 'mini_magick', '~> 4.8'
-
+# gem 'mini_magick', '~> 4.8'
+gem 'faker', '~> 2.11'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
