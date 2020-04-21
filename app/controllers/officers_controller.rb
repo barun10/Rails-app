@@ -27,10 +27,8 @@ class OfficersController < ApplicationController
     respond_to do |format|
       if @officer.save
         format.html { redirect_to @officer, notice: 'Officer was successfully created.' }
-        format.json { render :show, status: :created, location: @officer }
       else
         format.html { render :new }
-        format.json { render json: @officer.errors, status: :unprocessable_entity }
       end
     end
   end
@@ -40,10 +38,8 @@ class OfficersController < ApplicationController
     respond_to do |format|
       if @officer.update(officer_params)
         format.html { redirect_to @officer, notice: 'Officer was successfully updated.' }
-        format.json { render :show, status: :ok, location: @officer }
       else
         format.html { render :edit }
-        format.json { render json: @officer.errors, status: :unprocessable_entity }
       end
     end
   end
@@ -52,7 +48,6 @@ class OfficersController < ApplicationController
     @officer.destroy
     respond_to do |format|
       format.html { redirect_to officers_url, notice: 'Officer was successfully destroyed.' }
-      format.json { head :no_content }
     end
   end
 
