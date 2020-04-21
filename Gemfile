@@ -30,9 +30,9 @@ gem 'prawn-table', '~> 0.2.2'
 # gem 'bcrypt', '~> 3.1.7'
 gem 'bootstrap-sass', '~> 3.4.1'
 gem 'bootstrap', '~> 4.4'
-
+gem 'jquery-rails'
 gem 'simple_form'
-
+gem 'client_side_validations', '~> 16.2'
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 gem 'faker', '~> 2.11'

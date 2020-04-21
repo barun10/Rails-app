@@ -1,5 +1,5 @@
 
-<%= form_with(model: image, local: true) do |form| %>
+<%= form_with(model: image, local: true), validate :true do |form| %>
 
   <div class="field">
     <%= form.label :image %>
