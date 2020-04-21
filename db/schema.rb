@@ -48,8 +48,8 @@ ActiveRecord::Schema.define(version: 2020_04_13_151536) do
   end
 
   create_table "officers", options: "ENGINE=InnoDB DEFAULT CHARSET=latin1", force: :cascade do |t|
-    t.string "name"
-    t.string "email"
+    t.string "name", null: false
+    t.string "email", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
