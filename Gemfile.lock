@@ -242,6 +242,10 @@ DEPENDENCIES
   chromedriver-helper
   client_side_validations (~> 16.2)
   coffee-rails (~> 4.2)
+<<<<<<< HEAD
+=======
+  csv (~> 0.0.1)
+>>>>>>> mailer
   faker (~> 2.11)
   jbuilder (~> 2.5)
   jquery-rails

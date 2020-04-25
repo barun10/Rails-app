@@ -20,5 +20,8 @@ class HomeController < ApplicationController
         send_data pdf.render, filename: 'employee.pdf', type: 'application/pdf', disposition: 'inline'
       end
     end
+  def send_mail
+    StudentMailer.send_student_mail.deliver_now
+    render :html => "mail sent"
   end
 end
