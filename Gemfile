@@ -26,6 +26,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'prawn', '~> 2.1'
 gem 'prawn-table', '~> 0.2.2'
 gem 'letter_opener', '~> 1.4', '>= 1.4.1'
+gem 'faker', '~> 2.11'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password

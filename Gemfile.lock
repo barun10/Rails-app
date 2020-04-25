@@ -76,6 +76,8 @@ GEM
     csv (0.0.1)
     erubi (1.9.0)
     execjs (2.7.0)
+    faker (2.11.0)
+      i18n (>= 1.6, < 2)
     ffi (1.11.2)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
@@ -208,6 +210,7 @@ DEPENDENCIES
   chromedriver-helper
   coffee-rails (~> 4.2)
   csv (~> 0.0.1)
+  faker (~> 2.11)
   jbuilder (~> 2.5)
   letter_opener (~> 1.4, >= 1.4.1)
   listen (>= 3.0.5, < 3.2)
