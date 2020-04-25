@@ -8,6 +8,8 @@ class HomeController < ApplicationController
     respond_to do |format|
       format.html
       format.csv { send_data @users.to_csv, filename: "users.csv" }
+    end
+  end
   def pdfs
     @employees = Employee.all
 
