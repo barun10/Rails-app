@@ -12,4 +12,10 @@
     user_email: Faker::Internet.email,
 		phone_number: Faker::PhoneNumber.phone_number
 	)
+50.times do
+    Employee.create(
+        name: Faker::Name.name,   
+        email: Faker::Internet.email,
+        phone_number: Faker::PhoneNumber.phone_number
+    )
 end
