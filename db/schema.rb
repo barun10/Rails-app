@@ -43,6 +43,7 @@ ActiveRecord::Schema.define(version: 2020_04_25_014241) do
 
   create_table "images", options: "ENGINE=InnoDB DEFAULT CHARSET=latin1", force: :cascade do |t|
     t.string "title"
+    t.string "image"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
