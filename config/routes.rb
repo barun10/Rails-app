@@ -3,7 +3,8 @@ Rails.application.routes.draw do
   
   resources :officers
 
-  resources :images, except: [:edit, :update, :destroy]
+  resources :images, only: [:index, :create, :show, :new]
+
   get 'home/users'
   get 'home/pdfs'
 
