@@ -33,7 +33,6 @@ gem 'letter_opener', '~> 1.4', '>= 1.4.1'
 gem 'bootstrap-sass', '~> 3.4.1'
 gem 'bootstrap', '~> 4.4'
 gem 'jquery-rails'
-gem 'simple_form'
 gem 'client_side_validations', '~> 16.2'
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'

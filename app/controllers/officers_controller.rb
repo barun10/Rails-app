@@ -3,13 +3,11 @@ class OfficersController < ApplicationController
 
   def index
     @officers = Officer.all
-    @search = params["search"]
-		
-		if @search.present?
-			@query = @search[:query]
-    	@officers = Officer.where("name LIKE ?" ,"%#{@query}%") .or(Officer.where("email LIKE ?" ,"%#{@query}%"))
-		end
-		end
+    if params[:query]
+      @officers = Officer.where("name LIKE ?" ,"%#{params[:query]}%").or(Officer.where("email LIKE ?" ,"%#{params[:query]}%"))
+    end
+  end
+  
   def show
   end
 
@@ -57,6 +55,6 @@ class OfficersController < ApplicationController
     end
 
     def officer_params
-      params.require(:officer).permit(:name, :email)
+      params.permit(:name, :email)
     end
 end

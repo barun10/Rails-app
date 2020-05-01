@@ -2,13 +2,11 @@
 
 <h1>Officers</h1>
 
-<%= simple_form_for :search, method: "GET", html: { class: 'form-inline' } do |f| %>
-  <%= f.input :query, input_html: {value: ""} %>
-  <br>
-  <%= f.submit "Search", class: "btn btn-primary" %>
-  <br>
-<% end %>
 
+<%= form_tag(officers_path, method: :get) do %>
+  Query <%= text_field_tag :query, params[:query] %>
+  <%= submit_tag 'Search' %>
+<% end %>
 <br>
 <table>
   <thead>

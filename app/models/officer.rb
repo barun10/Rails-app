@@ -7,4 +7,5 @@ class Officer < ApplicationRecord
 		validates :email, presence: true,
 											uniqueness: true,
 											format: { with: EMAIL_REGEX }
+
 end
