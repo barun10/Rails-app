@@ -55,6 +55,6 @@ class OfficersController < ApplicationController
     end
 
     def officer_params
-      params.permit(:name, :email)
+      params.require(:officer).permit(:name, :email)
     end
 end

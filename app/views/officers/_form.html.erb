@@ -1,4 +1,4 @@
-<%= form_with(model: officer, local: true) do |form| %>
+<%= form_with(model: officer, local: true, validate: true) do |form| %>
   <% if officer.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(officer.errors.count, "error") %> prohibited this officer from being saved:</h2>
