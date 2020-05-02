@@ -2,24 +2,25 @@
 
 <h1>Images</h1>
 
-<%= link_to 'New Image', new_image_path, class: 'btn btn-default' %>
 
+<br>
 
 
 <div class = "gallery">
-<% if @images.exists? %>
-  <% @images.each_slice(4) do |image| %>
-    <div class = "row">
+  <% if @images.exists? %>
+    <% @images.each_slice(4) do |image| %>
+      <div class = "row">
         <% image.each do |image| %>
           <div class = "col-md-3">
-						<%= image_tag image.image, :size => "250x125" %>
-						<div>
-							<%= link_to  image.title, image.image %>
-						</div>
-					</div>
-				<%end%>
-    </div>
+            <%= image_tag image.image, :size => "250x125" %>
+            <div>
+              <%= link_to  image.title, image.image %>
+            </div>
+          </div>
+        <%end%>
+      </div>
+    <%end%>
   <%end%>
-<%end%>
 </div>
-
+<br>
+<%= link_to 'New Image', new_image_path, class: 'btn btn-default' %>
